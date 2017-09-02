@@ -1,0 +1,13 @@
+chat-db:
+  #build: ./../Chat_db
+  image: jaquinonesg/jarkko_chat_db
+  ports:
+    - 3307:27017
+  hostname: mongodb
+chat-ms:
+  #build: .
+  image: jaquinonesg/jarkko_chat
+  ports:
+    - "4005:4005"
+  links:
+    - chat-db

@@ -1,0 +1,4 @@
+jarkko-authentication:
+  scale: 1
+authentication-db:
+  scale: 1
